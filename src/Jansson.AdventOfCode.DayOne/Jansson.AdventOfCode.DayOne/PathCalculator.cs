@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Jansson.AdventOfCode.DayOne
 {
@@ -14,23 +13,13 @@ namespace Jansson.AdventOfCode.DayOne
 
         public int CalculateDistanceBetweenStartAndFinish(string directions)
         {
-            ParseInput(directions);
+            Directions = InputParser.ParseInput(directions);
             GoToEnd();
             return Math.Abs(_position.X) + Math.Abs(_position.Y);
         }
 
         public int GetFirstDuplicatedPosition()
             => Math.Abs(DuplicatedPointsHistoryList[0].X) + Math.Abs(DuplicatedPointsHistoryList[0].Y);
-
-        public void ParseInput(string input)
-        {
-            var dir = input.Split(',').ToList();
-            Directions = new List<List<string>>();
-            dir = dir.Select(direction =>
-                    direction.Trim()).ToList();
-            foreach (var direction in dir)
-                Directions.Add(new List<string> { char.ToString(direction[0]), direction.Remove(0, 1) });
-        }
 
         public void GoToEnd()
         {
@@ -127,19 +116,5 @@ namespace Jansson.AdventOfCode.DayOne
                     break;
             }
         }
-    }
-
-    public enum Direction
-    {
-        North,
-        East,
-        South,
-        West
-    }
-
-    public struct Point
-    {
-        public int X { get; set; }
-        public int Y { get; set; }
     }
 }
