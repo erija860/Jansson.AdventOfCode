@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text;
 
 namespace Jansson.AdventOfCode.DayFour
 {
@@ -17,12 +18,7 @@ namespace Jansson.AdventOfCode.DayFour
                 if (room.IsValid())
                     _validRooms.Add(room);
 
-            var sumOfSectorId = 0;
-
-            foreach (var validRoom in _validRooms)
-                sumOfSectorId = sumOfSectorId + validRoom.SectorId;
-
-            return sumOfSectorId;
+            return _validRooms.Aggregate(0, (current, validRoom) => current + validRoom.SectorId);
         }
 
         public int GetSectorIdOfNorthPoleObjectStorage()
@@ -51,14 +47,7 @@ namespace Jansson.AdventOfCode.DayFour
                 foreach (var partOfName in splitRoomLine)
                     room.Name = string.Concat(room.Name, partOfName);
 
-                for (var i = 0; i < splitRoomLine.Count; i++)
-                {
-                    room.OriginalName = room.OriginalName + splitRoomLine[i];
-
-                    if (i < splitRoomLine.Count - 1)
-                        room.OriginalName = room.OriginalName + "-";
-                }
-
+                room.OriginalName = string.Join("-", splitRoomLine);
                 room.Checksum = checksumAndsectorId[1];
                 room.SectorId = int.Parse(checksumAndsectorId[0]);
                 rooms.Add(room);
@@ -89,8 +78,7 @@ namespace Jansson.AdventOfCode.DayFour
 
         public string GetDecryptedName()
         {
-            var decryptedName = string.Empty;
-
+            var builder = new StringBuilder();
             foreach (var character in OriginalName)
             {
                 var currentChar = (int)character;
@@ -106,9 +94,9 @@ namespace Jansson.AdventOfCode.DayFour
                         if (currentChar == 123)
                             currentChar = 97;
                     }
-                decryptedName = decryptedName + (char)currentChar;
+                builder.Append((char)currentChar);
             }
-            return decryptedName;
+            return builder.ToString();
         }
     }
 }
