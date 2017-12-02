@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jansson.AdventOfCode.DayTen", "Jansson.AdventOfCode.DayTen\Jansson.AdventOfCode.DayTen.csproj", "{78789C02-0F18-4779-9FB0-F4D6CD34C060}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jansson.AdventOfCode.DayTen.Tests", "Jansson.AdventOfCode.DayTen.Tests\Jansson.AdventOfCode.DayTen.Tests.csproj", "{22BF4842-DA06-4934-870F-7DB1394843D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{78789C02-0F18-4779-9FB0-F4D6CD34C060}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78789C02-0F18-4779-9FB0-F4D6CD34C060}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78789C02-0F18-4779-9FB0-F4D6CD34C060}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22BF4842-DA06-4934-870F-7DB1394843D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22BF4842-DA06-4934-870F-7DB1394843D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22BF4842-DA06-4934-870F-7DB1394843D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22BF4842-DA06-4934-870F-7DB1394843D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {379AB6A2-49B1-42C8-BE39-6B236BD6FDF9}
 	EndGlobalSection
 EndGlobal

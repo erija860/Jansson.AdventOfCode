@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jansson.AdventOfCode.2017.D
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day2", "Day2", "{892D41C3-766F-42F7-A8B6-E75A42E6BCA3}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day3", "Day3", "{32E6A23E-B8A6-49BB-BCF5-13F5D90C2600}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
