@@ -53,6 +53,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BalanceBotsCalculator.cs" />
+    <Compile Include="Bot.cs" />
+    <Compile Include="BotAndBinHandler.cs" />
+    <Compile Include="InputParser.cs" />
+    <Compile Include="Instruction.cs" />
+    <Compile Include="OutputBin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
