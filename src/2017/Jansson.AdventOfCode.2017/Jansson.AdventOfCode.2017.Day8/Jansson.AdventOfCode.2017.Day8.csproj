@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{99EE5443-CE7D-4749-9895-70AB764ACA3D}</ProjectGuid>
+    <ProjectGuid>{18CC367D-4978-475B-B9D5-EECB945BC01D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Jansson.AdventOfCode._2017.Day7</RootNamespace>
-    <AssemblyName>Jansson.AdventOfCode.2017.Day7</AssemblyName>
+    <RootNamespace>Jansson.AdventOfCode._2017.Day8</RootNamespace>
+    <AssemblyName>Jansson.AdventOfCode.2017.Day8</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,9 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CorrectWeightReturnModel.cs" />
-    <Compile Include="Program.cs" />
-    <Compile Include="RecursiveCircus.cs" />
+    <Compile Include="RegisterInstructionsCalculator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
