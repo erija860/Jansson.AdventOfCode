@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27004.2010
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jansson.AdventOfCode.2017.Day1.Tests", "Jansson.AdventOfCode.2017.Day1.Tests\Jansson.AdventOfCode.2017.Day1.Tests.csproj", "{40093AC2-B882-4FD9-889D-76C224A92DCD}"
 EndProject
@@ -52,6 +52,18 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jansson.AdventOfCode.2017.Day8", "Jansson.AdventOfCode.2017.Day8\Jansson.AdventOfCode.2017.Day8.csproj", "{18CC367D-4978-475B-B9D5-EECB945BC01D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jansson.AdventOfCode.2017.Day8.Tests", "Jansson.AdventOfCode.2017.Day8.Tests\Jansson.AdventOfCode.2017.Day8.Tests.csproj", "{7D7148A5-724E-404B-98D7-E00009F25FBC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day9", "Day9", "{5E21A428-C0FE-4E14-93C5-95CD789B3B79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jansson.AdventOfCode.2017.Day9", "Jansson.AdventOfCode.2017.Day9\Jansson.AdventOfCode.2017.Day9.csproj", "{EEE00F4C-3F0F-4498-893B-43E666E0E426}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jansson.AdventOfCode.2017.Day9.Tests", "Jansson.AdventOfCode.2017.Day9.Tests\Jansson.AdventOfCode.2017.Day9.Tests.csproj", "{05044E7B-7A83-43B0-A28E-10D9F6EBB97E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Day10", "Day10", "{76FC4DF1-F0D8-43D9-8812-26BEB58962D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jansson.AdventOfCode.2017.Day10", "Jansson.AdventOfCode.2017.Day10\Jansson.AdventOfCode.2017.Day10.csproj", "{CADDC271-8A7F-4E72-BE81-9DD546842C6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jansson.AdventOfCode.2017.Day10.Tests", "Jansson.AdventOfCode.2017.Day10.Tests\Jansson.AdventOfCode.2017.Day10.Tests.csproj", "{DE074A2F-EF2A-4A60-876B-12527960FA27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -127,6 +139,22 @@ Global
 		{7D7148A5-724E-404B-98D7-E00009F25FBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D7148A5-724E-404B-98D7-E00009F25FBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D7148A5-724E-404B-98D7-E00009F25FBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEE00F4C-3F0F-4498-893B-43E666E0E426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEE00F4C-3F0F-4498-893B-43E666E0E426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEE00F4C-3F0F-4498-893B-43E666E0E426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEE00F4C-3F0F-4498-893B-43E666E0E426}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05044E7B-7A83-43B0-A28E-10D9F6EBB97E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05044E7B-7A83-43B0-A28E-10D9F6EBB97E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05044E7B-7A83-43B0-A28E-10D9F6EBB97E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05044E7B-7A83-43B0-A28E-10D9F6EBB97E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CADDC271-8A7F-4E72-BE81-9DD546842C6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CADDC271-8A7F-4E72-BE81-9DD546842C6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CADDC271-8A7F-4E72-BE81-9DD546842C6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CADDC271-8A7F-4E72-BE81-9DD546842C6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE074A2F-EF2A-4A60-876B-12527960FA27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE074A2F-EF2A-4A60-876B-12527960FA27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE074A2F-EF2A-4A60-876B-12527960FA27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE074A2F-EF2A-4A60-876B-12527960FA27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -149,6 +177,10 @@ Global
 		{2B97999D-DE38-41DC-99BC-960C52A28248} = {67CB44A2-DD0E-494B-8FD9-29C460627903}
 		{18CC367D-4978-475B-B9D5-EECB945BC01D} = {DE9DCB5A-751B-4799-8432-3EA7B2088754}
 		{7D7148A5-724E-404B-98D7-E00009F25FBC} = {DE9DCB5A-751B-4799-8432-3EA7B2088754}
+		{EEE00F4C-3F0F-4498-893B-43E666E0E426} = {5E21A428-C0FE-4E14-93C5-95CD789B3B79}
+		{05044E7B-7A83-43B0-A28E-10D9F6EBB97E} = {5E21A428-C0FE-4E14-93C5-95CD789B3B79}
+		{CADDC271-8A7F-4E72-BE81-9DD546842C6A} = {76FC4DF1-F0D8-43D9-8812-26BEB58962D3}
+		{DE074A2F-EF2A-4A60-876B-12527960FA27} = {76FC4DF1-F0D8-43D9-8812-26BEB58962D3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2D8197A4-9253-4AFE-BA65-209681CB2A72}

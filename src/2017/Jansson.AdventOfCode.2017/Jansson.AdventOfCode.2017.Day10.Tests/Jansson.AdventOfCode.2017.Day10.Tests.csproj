@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2B97999D-DE38-41DC-99BC-960C52A28248}</ProjectGuid>
+    <ProjectGuid>{DE074A2F-EF2A-4A60-876B-12527960FA27}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Jansson.AdventOfCode._2017.Day7.Tests</RootNamespace>
-    <AssemblyName>Jansson.AdventOfCode.2017.Day7.Tests</AssemblyName>
+    <RootNamespace>Jansson.AdventOfCode._2017.Day10.Tests</RootNamespace>
+    <AssemblyName>Jansson.AdventOfCode.2017.Day10.Tests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <NuGetPackageImportStamp>
@@ -52,23 +52,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Day7Tests.cs" />
+    <Compile Include="Day10Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Jansson.AdventOfCode.2017.Day7\Jansson.AdventOfCode.2017.Day7.csproj">
-      <Project>{99ee5443-ce7d-4749-9895-70ab764aca3d}</Project>
-      <Name>Jansson.AdventOfCode.2017.Day7</Name>
+    <ProjectReference Include="..\Jansson.AdventOfCode.2017.Day10\Jansson.AdventOfCode.2017.Day10.csproj">
+      <Project>{caddc271-8a7f-4e72-be81-9dd546842c6a}</Project>
+      <Name>Jansson.AdventOfCode.2017.Day10</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Day7Input.txt" />
-    <Content Include="Day7TestInputPart1.txt">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
